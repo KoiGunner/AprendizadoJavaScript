@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios mais variados </title>
+</head>
+<body>
+    <h1>Exercícios básicos de JavaScript</h1>
+    <p>A título de curiosidade, veja os códigos apertando o botão (F12)</p>
+    <p id="teste"></p>
+    <p id="resultado"></p>
+    <p id="maior"></p>
+    <p id="nome"></p>
+    <p id="polaridade"></p>
+</body>
+<script>
+
+// Lista de exercicios simples 
+
+// Peça dois números e mostre a soma.
+
+let a = Number(prompt("Digite o primeiro numero: "));
+let b = Number(prompt("Digite o segundo número: "));
+
+let resultado = a + b; 
+
+document.getElementById("teste").innerHTML = "A soma é " + resultado;
+// Peça um número e diga se ele é par ou ímpar.
+
+let c = Number(prompt("Digite o número para verificar: "));
+
+if(c % 2 ===0 ){
+    document.getElementById("resultado").innerHTML = "O valor " + c + " é par";
+} else {
+    document.getElementById("resultado").innerHTML = "O valor " + c + " é ímpar";
+}
+
+// Peça dois números e diga qual é o maior.
+
+let maior; 
+
+if(a > b){
+    document.getElementById("maior").innerHTML = "O primeiro número é maior que o segundo";
+} else if(b > a){
+    document.getElementById("maior").innerHTML = "O segundo número é maior que o primeiro"; 
+}
+
+// Peça um nome e exiba a mensagem “Olá, [nome]! Seja bem-vindo(a)!”.
+
+let nome = prompt("Digite seu nome: "); 
+document.getElementById("nome").innerHTML = "Olá " + nome + ", seja bem-vindo";
+
+// Peça um número e diga se ele é positivo, negativo ou zero.
+
+
+let numberPolarity = Number(prompt("Digite mais um número por favor"));
+
+if(numberPolarity > 0 ){
+    document.getElementById("polaridade").innerHTML = "Número " + numberPolarity + " é positivo";
+} else {
+    document.getElementById("polaridade").innerHTML = "Número " + numberPolarity + " é negativo";
+}
+
+// Peça a idade e informe se a pessoa é maior de idade.
+
+let idade = Number(prompt("Digite sua idade: "));
+
+if(idade < 18){
+    document.getElementById("idade").innerHTML = "sua idade é " + idade + ", portanto você é adolescente";
+} else {
+    document.getElementById("idade").innerHTML = "Sua idade é " + idade + ", você é um adulto";
+}
+
+// Peça o valor de um produto e aplique 10% de desconto.
+
+// Calcule o IMC: peça peso e altura, e exiba a categoria.
+
+// Peça o nome de 3 frutas e exiba como uma lista.
+
+// Peça um número de 1 a 7 e exiba o dia da semana correspondente.
+
+</script>
+</html>
